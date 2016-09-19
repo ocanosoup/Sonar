@@ -6,9 +6,9 @@ An Alexa Skill that uses the Twilio API for SMS to send a message from a Twilio 
 "Alexa ask Sonar to send Nathan a message saying Gym today?"
 
 ###Requirements
-Twilio account  
-Twilio AccountSid and Auth Token  
-Twilio number with SMS capabilities
+  * Twilio account  
+  * Twilio AccountSid and Auth Token  
+  * Twilio number with SMS capabilities
 
 ###Please Take Note
 You will need to provide the things noted in requirements in skill.js  
