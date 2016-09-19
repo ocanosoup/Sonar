@@ -131,31 +131,15 @@ function messageHandler(intent, session, callback) {
     else message = intent.slots.message.value;
     if(undefined !== intent.slots.recipient.value) {
         name = intent.slots.recipient.value;
-        /*var contacts = [
-            //in the form {name: 'Name', number: '+1number'},
-        ];
-        for(var index=0; index<contacts.length; ++index){
-          	if(contacts[index].name.toUpperCase() === name.toUpperCase()){
-              	toNumber = contacts[index].number;
-                name = contacts[index].name;
-              	break;
-            }
-        }*/
         switch(name.toUpperCase()) {
-          case "NAME":
-              number = "+1number";
+          case "NAME": //Please make sure to add cases as wanted and
+              number = "+1number"; //also add numbers to match the cases
               break;
           default:
               callback(session.attributes, buildSpeechletResponseWithoutCard("Not a valid contact", "", "true"));
         }
-        //for this style to work I would need the names and numbers of people I intend on texting this way
-        //maybe export contact list to vcf then put here? Also would love to have texts sent there to twilio
-        //sent back to me even to pseudo message
     }
     SendSMS(toNumber, message, callback);
-    /*if(undefined !== intent.slots.type.value) {
-        //for when I want to try out voice as well
-    }*/
 }
 function SendSMS(to, body, callback) {
 
