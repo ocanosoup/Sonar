@@ -1,0 +1,24 @@
+{
+  "intents": [{
+    "intent": "AMAZON.CancelIntent"
+  },{
+    "intent": "AMAZON.StopIntent"
+  },{
+    "intent": "TestIntent"
+  },{
+    "intent": "CallPhoneIntent"
+  },{
+    "intent": "MessageIntent"
+  },{
+    "intent": "noMessageIntent"
+  },{
+    "intent": "handleMessageIntent",
+    "slots": [{
+      "name": "message",
+      "type": "MESSAGE_LIST"
+    },{
+      "name": "recipient",
+      "type": "AMAZON.US_FIRST_NAME"
+    }]
+  }]
+}

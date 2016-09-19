@@ -1,0 +1,22 @@
+CallPhoneIntent call my phone
+CallPhoneIntent to call my phone
+CallPhoneIntent to find my phone
+CallPhoneIntent find my phone
+handleMessageIntent text {recipient} {message}
+handleMessageIntent text {recipient} a message saying {message}
+handleMessageIntent text {recipient} a message that says {message}
+handleMessageIntent send {recipient} {message}
+handleMessageIntent send {recipient} a message saying {message}
+handleMessageIntent send {recipient} a message that says {message}
+handleMessageIntent text {recipient} an SMS saying {message}
+handleMessageIntent send {recipient} an SMS saying {message}
+handleMessageIntent text {recipient} an SMS that says {message}
+handleMessageIntent send {recipient} an SMS that says {message}
+handleMessageIntent send {recipient} a text saying {message}
+handleMessageIntent send {recipient} a text that says {message}
+handleMessageIntent {message}
+noMessageIntent send me a text
+noMessageIntent send me an sms
+noMessageIntent send me a sms
+noMessageIntent text me
+noMessageIntent text me a message
